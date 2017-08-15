@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,92 +21,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DIYPC" translatesAutoresizingMaskIntoConstraints="NO" id="glK-bk-NiV" userLabel="diyPCLogo">
-                                <rect key="frame" x="67" y="53" width="241" height="106"/>
-                            </imageView>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Aky-Mo-bjk">
-                                <rect key="frame" x="47" y="228" width="280" height="211"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMI-1p-Djf" userLabel="pcBuilderButton">
+                                <rect key="frame" x="191" y="273" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMI-1p-Djf" userLabel="pcBuilderButton">
-                                        <rect key="frame" x="0.0" y="45" width="120" height="120"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPq-XG-bwl" userLabel="pcBuilderImage">
+                                        <rect key="frame" x="25" y="8" width="70" height="61"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPq-XG-bwl">
-                                                <rect key="frame" x="25" y="8" width="70" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="pc"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwM-zp-tcw">
-                                                <rect key="frame" x="16" y="77" width="88" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <state key="normal" title="PC Builder">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cji-CF-qQm">
-                                                <rect key="frame" x="0.0" y="1" width="120" height="111"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                <integer key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1nW-v6-gaM" userLabel="tutorialsButton">
-                                        <rect key="frame" x="160" y="45" width="120" height="120"/>
+                                        <state key="normal" image="workstation"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwM-zp-tcw">
+                                        <rect key="frame" x="16" y="81" width="88" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ej-ju-Lrk">
-                                                <rect key="frame" x="25" y="9" width="70" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="tutoarialsbig"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8W-JS-flh">
-                                                <rect key="frame" x="16" y="78" width="88" height="33"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <state key="normal" title="Tutorials">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cX8-xh-6YC">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="111"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <connections>
-                                                    <segue destination="OeT-10-uEe" kind="showDetail" action="showViewController:sender:" id="N6g-FG-2Qq"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                <integer key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="PC Builder">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cji-CF-qQm">
+                                        <rect key="frame" x="0.0" y="1" width="120" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1nW-v6-gaM" userLabel="tutorialsButton">
+                                <rect key="frame" x="63" y="273" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ej-ju-Lrk" userLabel="tutorialsImage">
+                                        <rect key="frame" x="25" y="19" width="70" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tutorialsBig"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8W-JS-flh">
+                                        <rect key="frame" x="16" y="78" width="88" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Tutorials">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cX8-xh-6YC">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="OeT-10-uEe" kind="show" id="WiN-ub-XOK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diyPC2" translatesAutoresizingMaskIntoConstraints="NO" id="glK-bk-NiV" userLabel="diyPCLogo">
+                                <rect key="frame" x="95" y="63" width="185" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.14005419611930847" green="0.47472602128982544" blue="0.97206348180770874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Aky-Mo-bjk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="53X-mo-aVx"/>
-                            <constraint firstItem="glK-bk-NiV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="GUc-C9-rRw"/>
-                            <constraint firstItem="Aky-Mo-bjk" firstAttribute="top" secondItem="glK-bk-NiV" secondAttribute="bottom" constant="69" id="Grv-Lf-mNU"/>
-                            <constraint firstItem="Aky-Mo-bjk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dgD-BZ-X5Q"/>
-                            <constraint firstItem="Aky-Mo-bjk" firstAttribute="centerX" secondItem="glK-bk-NiV" secondAttribute="centerX" id="e5k-dH-ICA"/>
-                            <constraint firstItem="glK-bk-NiV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="fnq-rt-6SX"/>
-                            <constraint firstItem="glK-bk-NiV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="urr-MH-7VN"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="6aR-y4-wpd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4225" y="-1492"/>
+            <point key="canvasLocation" x="-4226.3999999999996" y="-1492.8035982008996"/>
         </scene>
         <!--Tutorials-->
         <scene sceneID="ozm-UZ-6MZ">
@@ -130,77 +118,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ccv-yg-Ctv" userLabel="pcBuilderButton">
-                                <rect key="frame" x="37" y="242" width="300" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ram" translatesAutoresizingMaskIntoConstraints="NO" id="g1d-Q8-0Fv">
-                                        <rect key="frame" x="26" y="30" width="70" height="61"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RAM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLc-jw-VHX">
-                                        <rect key="frame" x="154" y="43" width="95" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lyq-Zk-gRW" userLabel="pcBuilderButton">
-                                <rect key="frame" x="37" y="480" width="300" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psu" translatesAutoresizingMaskIntoConstraints="NO" id="XwE-sF-Jyv">
-                                        <rect key="frame" x="26" y="30" width="70" height="61"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PSU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFM-DZ-BBO">
-                                        <rect key="frame" x="154" y="43" width="95" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gs-mY-zzY" userLabel="pcBuilderButton">
-                                <rect key="frame" x="37" y="370" width="300" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gpu" translatesAutoresizingMaskIntoConstraints="NO" id="1Zy-GP-lMu">
-                                        <rect key="frame" x="26" y="30" width="70" height="61"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GPU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fj-Ld-hPW">
-                                        <rect key="frame" x="154" y="43" width="95" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XK7-nM-a7k" userLabel="pcBuilderButton">
-                                <rect key="frame" x="47" y="124" width="290" height="120"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XK7-nM-a7k" userLabel="cpuButton">
+                                <rect key="frame" x="42" y="273" width="290" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quG-TR-mr3">
@@ -217,10 +136,10 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I39-2G-7Rz">
-                                        <rect key="frame" x="0.0" y="5" width="290" height="111"/>
+                                        <rect key="frame" x="-5" y="0.0" width="300" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="RI2-bz-AJ8" kind="show" id="xvg-KU-VMQ"/>
+                                            <segue destination="eM4-ho-aJ4" kind="show" id="oNh-Nc-kUs"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -232,23 +151,42 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UwX-l0-Lib">
-                                <rect key="frame" x="0.0" y="610" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="history" id="ZvI-Iw-y9S"/>
-                                    <tabBarItem systemItem="topRated" id="1gd-Ge-Hvb"/>
-                                    <tabBarItem title="Tutorials" selectedImage="Bookmarks" systemItem="bookmarks" id="EjO-6G-Dbs"/>
-                                    <tabBarItem systemItem="more" id="kGG-dB-kws"/>
+                                    <tabBarItem title="Home" image="home" id="ZvI-Iw-y9S"/>
+                                    <tabBarItem title="Tutorials" image="openBook" id="1gd-Ge-Hvb" userLabel="Tutorials"/>
+                                    <tabBarItem title="PC Builder" image="pcBuilder" selectedImage="Bookmarks" id="EjO-6G-Dbs" userLabel="PC Builder"/>
                                 </items>
                             </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Tutorials" image="openBook" id="ZJn-RR-eJT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KU-cY-nHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3231" y="-1494"/>
+            <point key="canvasLocation" x="-2444" y="-1762"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="trW-aA-lFe">
+            <objects>
+                <tabBarController id="KiQ-ag-fS9" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="78N-lJ-DLI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="anw-vm-hGM"/>
+                        <segue destination="OeT-10-uEe" kind="relationship" relationship="viewControllers" id="1Eq-4i-D4T"/>
+                        <segue destination="x7C-yN-ulX" kind="relationship" relationship="viewControllers" id="Pog-LH-nid"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diD-IG-lra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3489" y="-1495"/>
         </scene>
         <!--CPU-->
         <scene sceneID="cgz-W0-lpW">
@@ -307,9 +245,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9v-bU-YZt">
-                                <rect key="frame" x="146" y="574" width="82" height="47"/>
+                                <rect key="frame" x="146" y="555" width="82" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="downarrow"/>
+                            </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PnV-6p-3Yx">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Home" image="home" id="apj-8E-MkH"/>
+                                    <tabBarItem title="Tutorials" image="openBook" id="Inw-Hx-961" userLabel="Tutorials">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="tabbar-more-active"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tabBarItem>
+                                    <tabBarItem title="PC Builder" image="pcBuilder" id="J8s-Ni-YOj" userLabel="PC Builder"/>
+                                </items>
+                            </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyj-jE-rf3" userLabel="homeButton">
+                                <rect key="frame" x="0.0" y="618" width="127" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -317,19 +273,103 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4s-rv-da8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2271" y="-1880"/>
+            <point key="canvasLocation" x="-425" y="-1496"/>
+        </scene>
+        <!--Tutorials-->
+        <scene sceneID="RDg-0c-2Wy">
+            <objects>
+                <viewController title="Tutorials" id="eM4-ho-aJ4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Vr-qp-b0U"/>
+                        <viewControllerLayoutGuide type="bottom" id="6y3-bv-hcK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oq2-A9-ADg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yJ0-Ss-dMN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Tutorials" prompt="" id="Qxl-M8-87O">
+                                        <barButtonItem key="backBarButtonItem" title="Home" id="RXr-Cw-I3h"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4Z-L9-Un3" userLabel="pcBuilderButton">
+                                <rect key="frame" x="42" y="114" width="290" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqY-r4-HyW">
+                                        <rect key="frame" x="25" y="30" width="70" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="cpu"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFf-s9-5Fh">
+                                        <rect key="frame" x="154" y="43" width="70" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="CPU">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbw-2g-G1d">
+                                        <rect key="frame" x="-5" y="0.0" width="300" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="RI2-bz-AJ8" kind="show" id="5Rg-QS-28L"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49c-Qh-o8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1466" y="-1496"/>
+        </scene>
+        <!--PC Builder Placeholder-->
+        <scene sceneID="Z9M-Mi-ULB">
+            <objects>
+                <viewController id="x7C-yN-ulX" userLabel="PC Builder Placeholder" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eUV-9y-DFC"/>
+                        <viewControllerLayoutGuide type="bottom" id="vrP-W2-OeL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y8A-HW-eaN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PC Builder" image="pcBuilder" id="GGN-Jd-gSl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i9P-sY-RxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2444" y="-1061"/>
         </scene>
     </scenes>
     <resources>
         <image name="Bookmarks" width="16" height="16"/>
-        <image name="DIYPC" width="184" height="106"/>
         <image name="cpu" width="338" height="338"/>
         <image name="cpuinstallation" width="1200" height="800"/>
+        <image name="diyPC2" width="337" height="232"/>
         <image name="downarrow" width="48" height="45"/>
-        <image name="gpu" width="534" height="331"/>
-        <image name="pc" width="180" height="180"/>
-        <image name="psu" width="256" height="256"/>
-        <image name="ram" width="488" height="500"/>
-        <image name="tutoarialsbig" width="626" height="596"/>
+        <image name="home" width="25" height="25"/>
+        <image name="openBook" width="25" height="25"/>
+        <image name="pcBuilder" width="25" height="25"/>
+        <image name="tabbar-more-active" width="16" height="16"/>
+        <image name="tutorialsBig" width="100" height="100"/>
+        <image name="workstation" width="80" height="80"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WiN-ub-XOK"/>
+    </inferredMetricsTieBreakers>
 </document>

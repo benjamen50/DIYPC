@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE04F37A1F42F11B000CA7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A95231F3483E5006D7993 /* Main.storyboard */; };
 		CE4A95201F3483E5006D7993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A951F1F3483E5006D7993 /* AppDelegate.swift */; };
 		CE4A95221F3483E5006D7993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A95211F3483E5006D7993 /* ViewController.swift */; };
-		CE4A95251F3483E5006D7993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A95231F3483E5006D7993 /* Main.storyboard */; };
-		CE4A95271F3483E5006D7993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4A95261F3483E5006D7993 /* Assets.xcassets */; };
+		CE4A95271F3483E5006D7993 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4A95261F3483E5006D7993 /* assets.xcassets */; };
 		CE4A952A1F3483E5006D7993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A95281F3483E5006D7993 /* LaunchScreen.storyboard */; };
 		CE4A95351F3483E5006D7993 /* DIY_PCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A95341F3483E5006D7993 /* DIY_PCTests.swift */; };
 		CE4A95401F3483E5006D7993 /* DIY_PCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A953F1F3483E5006D7993 /* DIY_PCUITests.swift */; };
@@ -38,7 +38,7 @@
 		CE4A951F1F3483E5006D7993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4A95211F3483E5006D7993 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE4A95241F3483E5006D7993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE4A95261F3483E5006D7993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE4A95261F3483E5006D7993 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		CE4A95291F3483E5006D7993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4A952B1F3483E5006D7993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4A95301F3483E5006D7993 /* DIY PCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIY PCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +100,7 @@
 				CE4A951F1F3483E5006D7993 /* AppDelegate.swift */,
 				CE4A95211F3483E5006D7993 /* ViewController.swift */,
 				CE4A95231F3483E5006D7993 /* Main.storyboard */,
-				CE4A95261F3483E5006D7993 /* Assets.xcassets */,
+				CE4A95261F3483E5006D7993 /* assets.xcassets */,
 				CE4A95281F3483E5006D7993 /* LaunchScreen.storyboard */,
 				CE4A952B1F3483E5006D7993 /* Info.plist */,
 			);
@@ -232,9 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE04F37A1F42F11B000CA7D4 /* Main.storyboard in Resources */,
 				CE4A952A1F3483E5006D7993 /* LaunchScreen.storyboard in Resources */,
-				CE4A95271F3483E5006D7993 /* Assets.xcassets in Resources */,
-				CE4A95251F3483E5006D7993 /* Main.storyboard in Resources */,
+				CE4A95271F3483E5006D7993 /* assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +507,7 @@
 				CE4A95461F3483E5006D7993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE4A95471F3483E5006D7993 /* Build configuration list for PBXNativeTarget "DIY PCTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +516,7 @@
 				CE4A95491F3483E5006D7993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE4A954A1F3483E5006D7993 /* Build configuration list for PBXNativeTarget "DIY PCUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +525,7 @@
 				CE4A954C1F3483E5006D7993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
