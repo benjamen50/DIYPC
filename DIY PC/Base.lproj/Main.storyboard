@@ -71,7 +71,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="111"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="OeT-10-uEe" kind="show" id="WiN-ub-XOK"/>
+                                            <segue destination="KiQ-ag-fS9" kind="show" id="aUq-2M-3Qg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -179,7 +179,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="anw-vm-hGM"/>
                         <segue destination="OeT-10-uEe" kind="relationship" relationship="viewControllers" id="1Eq-4i-D4T"/>
                         <segue destination="x7C-yN-ulX" kind="relationship" relationship="viewControllers" id="Pog-LH-nid"/>
                     </connections>
@@ -264,7 +263,7 @@
                                 </items>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyj-jE-rf3" userLabel="homeButton">
-                                <rect key="frame" x="0.0" y="618" width="127" height="50"/>
+                                <rect key="frame" x="0.0" y="568" width="127" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                         </subviews>
@@ -369,7 +368,4 @@
         <image name="tutorialsBig" width="100" height="100"/>
         <image name="workstation" width="80" height="80"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="WiN-ub-XOK"/>
-    </inferredMetricsTieBreakers>
 </document>
